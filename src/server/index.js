@@ -4,7 +4,7 @@ const mockAPIResponse = require('./mockAPI.js')
 
 const app = express()
 
-app.use(express.static('dist'))
+app.use(express.static('dist'))//'dist'
 
 console.log(__dirname)
 
