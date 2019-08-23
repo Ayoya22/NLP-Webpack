@@ -13,8 +13,8 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
-    "webpack": "^4.39.2",
     "webpack-cli": "^3.3.7"
   },
   "devDependencies": {
@@ -27,6 +27,7 @@
     "node-sass": "^4.12.0",
     "sass-loader": "^7.3.1",
     "style-loader": "^1.0.0",
+    "webpack": "^4.39.2",
     "webpack-dev-server": "^3.8.0"
   }
 }
