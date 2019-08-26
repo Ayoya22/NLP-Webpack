@@ -1,0 +1,50 @@
+<HTML>
+<HEAD>
+    <SCRIPT LANGUAGE=JavaScript>
+        function butCheckForm_onclick()
+        {
+            var myForm = document.form1;
+            myForm.txtAge.blur();
+
+            if (myForm.txtAge.value == "" || myForm.txtName.value == "")
+            {
+                document.write("missing value!");
+                if (myForm.txtName.value == "")
+                {
+                    myForm.txtName.focus();
+                }
+                else
+                {
+                    myForm.txtAge.focus();
+                }
+            }
+            else
+            {
+                document.write(myForm.txtName.value);
+            }
+        }
+        function txtAge_onblur()
+        {
+            var txtAge = document.form1.txtAge;
+            if (isNaN(txtAge.value) == true)
+            {
+                alert("Age must be a number.");
+                txtAge.focus();
+                txtAge.select();
+            }
+        }
+        function txtName_onchange()
+        {
+            window.status = "Hi " + document.form1.txtName.value;
+            document.write(document.form1.txtName.value);
+        }
+    </SCRIPT>
+</HEAD>
+<BODY>
+<FORM NAME=form1>    Please enter the following details:
+    Name:<INPUT TYPE="text" NAME=txtName onchange="txtName_onchange()">
+    Age: <INPUT TYPE="text" NAME=txtAge onblur="txtAge_onblur()">
+    <INPUT TYPE="button" VALUE="Check Details" NAME=butCheckForm onclick="butCheckForm_onclick()">
+</FORM>
+</BODY>
+</HTML>
