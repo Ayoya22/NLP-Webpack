@@ -1,16 +1,13 @@
 form {
-    width: 800px;
-    margin: 0 auto;
+    border: 1px solid #545454;
+    border-radius: 3px;
+    padding: 40px;
 }
 
-//phone
-@media only screen and (max-width: 715px) {
+input {
+    padding: 5px 20px;
+    width: 100%;
+    line-height: 16px;
+    margin: 10px 0;
 }
 
-// tablet
-@media only screen and (max-width: 990px) {
-}
-
-// desktop
-@media only screen and (min-width: 901px) {
-}

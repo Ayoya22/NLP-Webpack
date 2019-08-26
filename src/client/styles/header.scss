@@ -1,20 +1,6 @@
 header {
-    background-color: rgba(255, 255, 255, .8);
-    position: fixed;
     display: flex;
     justify-content: space-between;
-    padding: 20px 40px;
-    width: 100%;
+    padding: 10px 40px;
 }
 
-//phone
-@media only screen and (max-width: 715px) {
-}
-
-// tablet
-@media only screen and (max-width: 990px) {
-}
-
-// desktop
-@media only screen and (min-width: 901px) {
-}

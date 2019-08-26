@@ -3,7 +3,7 @@ import { checkForName } from './js/nameChecker'
 import {handleSubmit} from './js/interaction'
 import {handleSubmitArticle} from './js/interaction'
 
-import './styles/main.scss'
+import './styles/reset.scss'
 import './styles/footer.scss'
 import './styles/form.scss'
 import './styles/base.scss'
