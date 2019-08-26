@@ -1,7 +1,7 @@
 import { checkForName } from './js/nameChecker'
 //import { handleSubmit } from './js/formHandler'
 import {handleSubmit} from './js/interaction'
-import {handleSubmitArticle} from './js/interaction'
+import {handleSubmitArticle} from './js/interaction_Article'
 
 import './styles/reset.scss'
 import './styles/footer.scss'
