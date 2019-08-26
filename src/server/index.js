@@ -48,7 +48,6 @@ app.post('/api', function(req, res) {
 app.post('/article', function(req, res) {
     console.log(req);
     console.log("making request for article analysis: ", req.body);
-    // resource: https://docs.aylien.com/textapi/endpoints/#entity-level-sentiment-analysis
     textapi.sentiment({
         'url': req.body.text
     }, function(error, response) {
@@ -59,10 +58,4 @@ app.post('/article', function(req, res) {
 
 export {app}
 // designates what port the app will listen to for incoming requests
-app.listen(3000, function () {
-    console.log('Example app listening on port 3000!')
-})
 
-// app.get('/test', function (req, res) {
-//     res.send(mockAPIResponse)
-// })

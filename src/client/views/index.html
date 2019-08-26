@@ -10,6 +10,15 @@
             }
         }
     </script>
+    <SCRIPT LANGUAGE=JavaScript>
+        function butCheckForm_onclick2(){
+            var myForm = document.form2;
+            myForm.test_url.blur();
+            if (myForm.test_url.value == "") {
+                document.write("missing value!");
+            }
+        }
+    </script>
     <meta charset="utf-8">
     <title>Test</title>
 </head>
@@ -76,7 +85,7 @@
         <form name="form2">
             <input
                 type="url"
-                name="test-url"
+                name="test_url"
                 value=""
                 placeholder="https://www.news-source/a-news-article..."
                 required="required"
@@ -90,6 +99,7 @@
                 onclick="return Client.handleSubmitArticle(event)"
                 onsubmit="return Client.handleSubmitArticle(event)"
             />
+            <INPUT TYPE="button" VALUE="Check URL" NAME=butCheckForm onclick="butCheckForm_onclick2()">
         </form>
 
         <section class="url-results">

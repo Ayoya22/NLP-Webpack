@@ -1,9 +1,9 @@
-console.log("I exist still");
+console.log("I exist still, I am the Text");
 
 function handleSubmit(event) {
     event.preventDefault()
     var text = document.querySelectorAll('input[name=test-statement]')
-
+    console.log("This is a text")
     console.log(text[0].value);
     fetch('http://localhost:3000/api', {
         method: 'POST',
@@ -22,4 +22,9 @@ function handleSubmit(event) {
         })
 }
 
-export { handleSubmit }
+function uppercase(str, callback) {
+    callback(str.toUpperCase())
+}
+module.exports = uppercase
+
+export { handleSubmit, uppercase }
