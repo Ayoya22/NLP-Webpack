@@ -19,3 +19,16 @@ We used as server `Express` and frond end development tool `Webpack`
     present in the `pakage.json` file.
     
 - Then run the `npm run build-prod` command this will generate the dist folder and cache folders too.
+- Then run the `npm run build-dev` command still from your terminal, this will lauch your default browser with 
+the html file from the views folder.
+- After you have run the npm commands, you can also run the different tests folders that are present in the project.
+You can do so by running `npm run test` from the root directory of the project in the terminal. This command will 
+search and run the different tests folders together with all their tests using `jest`.
+ 
+- From there you will be able to input your texts or url to be analyzed by aylien.
+
+##Note
+
+The credentials used in setting up the aylien api is supposed to last just for 14 days from the day I created a trial account on Aylien text api.
+so if it doesn't work it means my credentials must have surely expired
+. So please use the link below to create an account on Aylien text api and change my credentials in the `index.js` file in the `./server` folder.
