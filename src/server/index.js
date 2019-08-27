@@ -56,6 +56,6 @@ app.post('/article', function(req, res) {
     });
 })
 
-export {app}
+module.exports = app
 // designates what port the app will listen to for incoming requests
 
